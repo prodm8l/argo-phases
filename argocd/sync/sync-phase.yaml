@@ -1,7 +1,8 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata: 
-  name: sync-phases
+  name: sync-phases-env
+  namespace: argocd
 spec:
   destination:
     namespace: phase-application
@@ -9,7 +10,7 @@ spec:
   project: default
   source: 
     path: argocd/sync/phases/
-    repoURL: "https://github.com/foxutech/kubernetes.git"
+    repoURL: "https://github.com/prodm8l/argo-phases.git"
     targetRevision: HEAD
     directory:
       recurse: true
