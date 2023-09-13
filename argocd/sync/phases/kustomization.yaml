@@ -1,7 +1,7 @@
 namePrefix: sync-phases-
 
 resources:
-- ./jobs/pre-sync-job.yaml
+- pre-sync-job.yaml
 - ./jobs/post-sync-job.yaml
 - ./jobs/sync-job.yaml
 - ./jobs/skip-job.yaml
